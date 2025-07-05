@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Venta de Moto</title>
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #414040;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #504f4f;
+        }
+        nav a {
+            color: rgb(252, 249, 249);
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background-color: transparent;
+      font-size: 16px;
+    }
+
+    .checkbox-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .checkbox-container a {
+      color: #0044cc;
+      text-decoration: none;
+    }
+
+    .submit-button {
+      margin-top: 25px;
+      width: 100%;
+      background-color: #0033a0;
+      color: white;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #002080;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+    <a href="D:\trabajo\inicio de la pagina.html">Inicio</a>
+    <a href="D:\trabajo\contacto.html">Contacto</a>
+        
+
+</nav
+
+<div class="form-container">
+  <h2>Formulario de Compra de Moto</h2>
+
+  <form action="#" method="post">
+    <label for="nombre">Nombre de contacto</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="telefono">Teléfono</label>
+    <input type="text" id="telefono" name="telefono" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="estado">Estado</label>
+    <select id="estado" name="estado" required>
+      <option value="">Selecciona tu estado...</option>
+      <option value="CDMX">CDMX</option>
+      <option value="Jalisco">Jalisco</option>
+      <option value="Nuevo León">Nuevo León</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <label for="distribuidor">Distribuidor</label>
+    <select id="distribuidor" name="distribuidor" required>
+      <option value="">Selecciona un distribuidor...</option>
+      <option value="Distribuidor A">Distribuidor A</option>
+      <option value="Distribuidor B">Distribuidor B</option>
+      <option value="Distribuidor C">Distribuidor C</option>
+    </select>
+
+    <label for="pago">Método de pago</label>
+    <select id="pago" name="pago" required>
+      <option value="">Selecciona método de pago...</option>
+      <option value="Efectivo">Efectivo</option>
+      <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+      <option value="Transferencia bancaria">Transferencia bancaria</option>
+    </select>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="privacidad" name="privacidad" required>
+      <label for="privacidad">
+        He leído y estoy de acuerdo con el
+        <a href="#" target="_blank">Aviso de privacidad</a>.
+      </label>
+    </div>
+
+    <button type="submit" class="submit-button">ENVIAR ➜</button>
+  </form>
+</div>
+
+</body>
+</html>

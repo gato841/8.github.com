@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #414040;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #504f4f;
+        }
+        nav a {
+            color: rgb(252, 249, 249);
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery-item h3 {
+            text-align: center;
+            color: #333;
+        }
+        .contact {
+            background-color: #171515;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact button {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #555;
+            
+        }
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos a Motos latam</h1>
+    <p>¡adquier tus mejores moto aqui !</p>
+</header>
+
+<nav>
+    <a href="D:\trabajo\inicio de la pagina.html">Inicio</a>
+    <a href="D:\trabajo\contacto.html">Contacto</a>
+        <a href="D:\trabajo\informacion.html">informacion</a>
+        
+
+</nav>
+
+<div class="container">
+    <h2>inicio</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="D:\motos\mantenimiento.png" alt="Moto 1">
+            <h3>matenimiento o accesorios </h3>
+            <p>adquiere tus piesas y accesorios </p>
+            <a href="D:\trabajo\contacto.html">contacto</a>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\motos\deportivas.jpg" alt="Moto 2">
+            <h3>Moto disponibles</h3>
+            <p>adquiere tus motos favoritas</p>
+            <a href="D:\trabajo\modelo.html">motos disponibles </a>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\ayuda.webp" alt="Moto 3">
+            <h3>ayuda al cliente</h3>
+            <p>cualquier duda o sujerencia</p>
+            <a href="D:\trabajo\contacto.html">contacto</a>
+
+        </div>
+    </div>
+    
+  <div class="contador" id="contador"></div>
+
+  <script>
+    // Obtener el número de visitas de esta sesión
+    let visitas = sessionStorage.getItem("visitasSesion");
+
+    // Si no hay visitas, inicializa en 1, si hay, incrementa
+    if (visitas === null) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+
+    // Guardar el nuevo valor
+    sessionStorage.setItem("visitasSesion", visitas);
+
+    // Mostrar en pantalla
+    document.getElementById("contador").innerText =
+      "Has visitado esta página " + visitas + " veces durante esta sesión.";
+  </script>
+ 
+</html>
